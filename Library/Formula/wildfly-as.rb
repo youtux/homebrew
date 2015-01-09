@@ -4,6 +4,8 @@ class WildflyAs < Formula
   sha1 "d78a864386a9bc08812eed9781722e45812a7826"
   head "https://github.com/wildfly/wildfly.git"
 
+  depends_on :java => "1.7"
+
   def install
     rm_f Dir["bin/*.bat"]
     libexec.install Dir["*"]
