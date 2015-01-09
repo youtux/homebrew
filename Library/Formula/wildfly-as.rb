@@ -2,6 +2,7 @@ class WildflyAs < Formula
   homepage "http://wildfly.org/"
   url "http://download.jboss.org/wildfly/8.2.0.Final/wildfly-8.2.0.Final.tar.gz"
   sha1 "d78a864386a9bc08812eed9781722e45812a7826"
+  head "https://github.com/wildfly/wildfly.git"
 
   def install
     rm_f Dir["bin/*.bat"]
